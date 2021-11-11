@@ -9,7 +9,7 @@ const Directors = () => {
         <div key={i}>
           {d.name}
           <ul>
-            {d.movies.map((movie) => (<li>{movie}</li>))}
+            {d.movies.map((movie, index) => (<li key={index}>{movie}</li>))}
           </ul>
         </div>
       ))}
